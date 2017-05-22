@@ -6,7 +6,7 @@
  * 时间复杂度O(N^2),很费时。是稳定排序
  *
  */
-error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE);
 //输入总个数
 echo 'please input total number:';
 $num = intval(fgets(STDIN));
@@ -14,7 +14,7 @@ $a = [];
 //输入名称和分数，中间空格分割
 for ($i = 0; $i < $num; $i++) {//下标从0开始
     printf("please input name and score:");
-    $input = fgets(STDIN);
+    $input = trim(fgets(STDIN));
     list($name, $score) = explode(' ', $input);
     //为了能展示名字，用二维数组存储来存储，否则可以直接用一维数组只存储分数
     $a[$i]['score'] = floatval($score);//必须转为数组，否则按照字符串来排序

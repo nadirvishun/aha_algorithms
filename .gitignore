@@ -1,5 +1,6 @@
-# c语言编译后台的exe文件
+﻿# c语言编译后台的exe(window下)和out（linux下）文件
 *.exe
+*.out
 
 # phpstorm project files
 .idea

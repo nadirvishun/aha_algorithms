@@ -5,7 +5,7 @@
  * 对于一般的情况来说，是相对最快的排序（当然不能和桶排序比），但是对于已经顺序比较规则的来说，并不一定比插入排序等更快
  * 总的来说还是要根据具体的情况来选择不同的算法才行
  */
-error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE);
 //输入总个数
 echo 'please input total number:';
 $num = intval(fgets(STDIN));
