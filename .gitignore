@@ -2,6 +2,9 @@
 *.exe
 *.out
 
+# vscode相关配置
+.vscode
+
 # phpstorm project files
 .idea
 

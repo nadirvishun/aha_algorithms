@@ -26,3 +26,4 @@ php quick_sort.php
 - 2_list 为第二章：栈、队列、链表
     - queue 队列
     - stack 栈
+    - train 纸牌游戏(排火车/小猫钓鱼),其中php文件中模拟纸牌的分发
